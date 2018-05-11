@@ -56,7 +56,7 @@ edir dir;
             cout<<endl<<endl<<endl;
             cout<<"\t\t\t   coding by\n\n\t Tarek A. Attia , Aisha M. Eltahir and Saleh A. Al Baz\n\n";
             while(true){
-            if(GetAsyncKeyState(VK_RETURN))
+            if(GetAsyncKeyState(VK_ESCAPE))
                 break;
             }
 

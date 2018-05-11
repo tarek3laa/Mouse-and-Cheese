@@ -131,7 +131,7 @@ void Shape:: drow()
 {
     /*in Windows OS you should use*//**system("cls");*//*but in Linux OS you should use*/ ///system("clear");
    //s.SetCursorPos(0,0);
-   system("cls");
+   //system("cls");
     for(int y=0; y<30; y++)
     {
         for(int x=0; x<25; x++)

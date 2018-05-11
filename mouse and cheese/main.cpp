@@ -2,11 +2,10 @@
 
 int main()
 {
-    Shape s;
+     Shape s;
      int stime=0 ,etime=0,e_stime=0,time1=180;
-     char c;
-    stime = time(NULL);
     s.start();
+    stime = time(NULL);
     do
       {
        s.clearscreen();
@@ -24,15 +23,17 @@ int main()
       // usleep(1000000);
 
        }
-    while ((!s.winOver&&!s.gameOver));
+    while (!s.winOver&&!s.gameOver);
     if(s.gameOver){
         system("cls");
         s.drowGameOver();
+        cout<<"\a\a";
         Sleep(100000);
         }
         else if(s.winOver){
                 system("cls");
         s.drowWinOver();
+        cout<<"\a\a\a";
                 Sleep(100000);
         }
     return 0;

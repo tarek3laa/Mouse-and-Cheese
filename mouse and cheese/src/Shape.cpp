@@ -9,6 +9,61 @@ edir dir;
 {
  printf("%c[%d;%df",0x1B,y,x);
  }*/
+
+ void Shape::start()
+ {
+        bool sn=true,sa=false;
+        while(true)
+        {
+            system("cls");
+            cout<<endl<<endl<<endl<<endl<<endl;
+            if(sn){
+            cout<<"\t\t\t  __________\n";
+            cout<<"\t\t\t | New Game |\n";
+            cout<<"\t\t\t  ----------\n\n";
+            cout<<"\t\t\t    About !\n\n";
+
+            }
+            else if(sa==true)
+            {
+                cout<<"\t\t\t  New Game\n\n";
+                cout<<"\t\t\t  _________\n";
+                cout<<"\t\t\t | About ! |\n";
+                cout<<"\t\t\t  ---------\n";
+
+            }
+            if(GetAsyncKeyState(VK_UP)){
+            sn=true;
+            sa=false;
+            }
+            else if(GetAsyncKeyState(VK_DOWN))
+            {
+                sn=false;
+                sa=true;
+            }
+            else if(GetAsyncKeyState(VK_RETURN))
+            break;
+
+        }
+        if(sa==true)
+        {
+            system("cls");
+            cout<<"\t\t  press ESC to return to the menu\n\n";
+            cout<<endl<<endl<<endl<<endl<<endl;
+            cout<<"\t\t\t Mouse and cheese";
+            cout<<endl<<endl;
+            cout<<"\t\t\t   version 1.0";
+            cout<<endl<<endl<<endl;
+            cout<<"\t\t\t   coding by\n\n\t Tarek A. Attia , Aisha M. Eltahir and Saleh A. Al Baz\n\n";
+            while(true){
+            if(GetAsyncKeyState(VK_RETURN))
+                break;
+            }
+
+        }
+
+
+ }
 void Shape::clearscreen()
 {
     HANDLE hOut;

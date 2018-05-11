@@ -45,7 +45,7 @@ public:
     //void setUp();
    // void SetCursorPos(int XPos, int YPos);
     Shape( );
-
+    void start();
     void drow();
     void input();
     void logic();

@@ -6,9 +6,10 @@ int main()
      int stime=0 ,etime=0,e_stime=0,time1=180;
      char c;
     stime = time(NULL);
+    s.start();
     do
       {
-
+       s.clearscreen();
        s.drow();
        s.input();
        s. logic();

@@ -6,6 +6,7 @@ int main()
      int stime=0 ,etime=0,e_stime=0,time1=180;
     s.start();
     stime = time(NULL);
+    system("cls");
     do
       {
        s.clearscreen();

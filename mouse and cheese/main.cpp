@@ -20,7 +20,7 @@ int main()
        if(time1<=0)
         s.gameOver=true;
        // s.SetCursorPos(0,0);
-       // Sleep(200);
+       Sleep(200);
       // usleep(1000000);
 
        }
@@ -28,14 +28,13 @@ int main()
     if(s.gameOver){
         system("cls");
         s.drowGameOver();
-        cout<<"\a\a";
         Sleep(100000);
         }
         else if(s.winOver){
                 system("cls");
         s.drowWinOver();
-        cout<<"\a\a\a";
                 Sleep(100000);
         }
+        system("pause");
     return 0;
 }

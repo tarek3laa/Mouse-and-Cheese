@@ -134,7 +134,7 @@ void Shape:: drow()
    //system("cls");
     for(int y=0; y<30; y++)
     {
-        for(int x=0; x<25; x++)
+        for(int x=0; x<60; x++)
         {
             if(shape[y][x]=='m')
                 cout<<"@";
@@ -183,7 +183,7 @@ void Shape::logic()
 
         for(int y=0; y<30; y++)
         {
-            for(int x=0; x<25; x++)
+            for(int x=0; x<60; x++)
             {
                 if(shape[y][x]=='m'&&shape[y][x-1]=='s'&&x!=0)
                 {
@@ -205,7 +205,7 @@ void Shape::logic()
 
         for(int y=0; y<30; y++)
         {
-            for(int x=0; x<25; x++)
+            for(int x=0; x<60; x++)
             {
                 if(shape[y][x]=='m'&&shape[y][x+1]=='s'&&x!=59)
                 {
@@ -227,7 +227,7 @@ void Shape::logic()
     case UP :
         for(int y=0; y<30; y++)
         {
-            for(int x=0; x<25; x++)
+            for(int x=0; x<60; x++)
             {
                 if(shape[y][x]=='m'&&shape[y-1][x]=='s'&&y!=0)
                 {
@@ -248,7 +248,7 @@ void Shape::logic()
     case DOWN :
         for(int y=0; y<30; y++)
         {
-            for(int x=0; x<25; x++)
+            for(int x=0; x<60; x++)
             {
                 if(shape[y][x]=='m'&&shape[y+1][x]=='s'&&y!=29)
                 {

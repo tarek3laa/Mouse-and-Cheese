@@ -9,7 +9,21 @@ edir dir;
 {
  printf("%c[%d;%df",0x1B,y,x);
  }*/
+void Shape::setup()
+{
+    ifstream in ("setup.txt");
+     for(int y=0; y<30; y++)
+    {
+        for(int x=0; x<60; x++)
+        {
+          in>>shape[y][x];
 
+        }
+
+    }
+    in.close();
+
+}
  void Shape::start()
  {
         bool sn=true,sa=false;
